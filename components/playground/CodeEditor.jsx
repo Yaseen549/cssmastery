@@ -1,10 +1,11 @@
 'use client';
 
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useMemo } from 'react';
 import { Copy, Check, RotateCcw, AlignLeft } from 'lucide-react';
+import { highlightCode } from '../../lib/syntaxHighlighter';
 
 export default function CodeEditor({
-  language = 'css', // 'html' | 'css' | 'javascript'
+  language = 'css', // 'html' | 'css'
   value = '',
   onChange,
   onReset,
@@ -13,15 +14,27 @@ export default function CodeEditor({
 }) {
   const textareaRef = useRef(null);
   const lineNumbersRef = useRef(null);
+  const highlightRef = useRef(null);
   const [copied, setCopied] = React.useState(false);
 
   const lines = value.split('\n');
   const lineCount = lines.length;
 
-  // Sync scrolling between line numbers and textarea
+  // Memoized syntax highlighted HTML (< 0.5ms)
+  const highlightedCode = useMemo(() => {
+    return highlightCode(value, language);
+  }, [value, language]);
+
+  // Sync scrolling between line numbers, syntax highlight underlay, and textarea
   const handleScroll = () => {
-    if (textareaRef.current && lineNumbersRef.current) {
-      lineNumbersRef.current.scrollTop = textareaRef.current.scrollTop;
+    if (textareaRef.current) {
+      if (lineNumbersRef.current) {
+        lineNumbersRef.current.scrollTop = textareaRef.current.scrollTop;
+      }
+      if (highlightRef.current) {
+        highlightRef.current.scrollTop = textareaRef.current.scrollTop;
+        highlightRef.current.scrollLeft = textareaRef.current.scrollLeft;
+      }
     }
   };
 
@@ -147,12 +160,12 @@ export default function CodeEditor({
       </div>
 
       {/* Editor Main Text Area with Line Numbers */}
-      <div className="flex-1 min-h-0 relative flex overflow-hidden font-mono text-xs leading-relaxed">
+      <div className="flex-1 min-h-0 relative flex overflow-hidden font-mono text-[12.5px] leading-5">
         {/* Line Numbers Column */}
         <div
           ref={lineNumbersRef}
           aria-hidden="true"
-          className="w-10 select-none overflow-hidden bg-[#0a0f1d] py-3 pr-2.5 text-right font-mono text-[11px] text-slate-600 border-r border-slate-800/70"
+          className="w-10 select-none overflow-hidden bg-[#0a0f1d] py-3 pr-2.5 text-right font-mono text-[11px] text-slate-600 border-r border-slate-800/70 shrink-0"
         >
           {Array.from({ length: lineCount }).map((_, i) => (
             <div key={i} className="h-5 leading-5">
@@ -161,21 +174,40 @@ export default function CodeEditor({
           ))}
         </div>
 
-        {/* Text Area */}
-        <textarea
-          ref={textareaRef}
-          value={value}
-          onChange={(e) => onChange(e.target.value)}
-          onScroll={handleScroll}
-          onKeyDown={handleKeyDown}
-          readOnly={readOnly}
-          spellCheck="false"
-          autoCapitalize="none"
-          autoComplete="off"
-          autoCorrect="off"
-          aria-label={`${label || language} code editor`}
-          className="flex-1 min-h-0 h-full w-full resize-none bg-transparent p-3 text-slate-100 focus:outline-none selection:bg-brand-500/30 selection:text-white leading-5 overflow-auto whitespace-pre font-mono text-[12px]"
-        />
+        {/* Code Canvas Container with Synchronized Syntax Highlighting */}
+        <div className="relative flex-1 min-h-0 h-full overflow-hidden">
+          {/* Syntax Highlighted Underlay */}
+          <pre
+            ref={highlightRef}
+            aria-hidden="true"
+            className="absolute inset-0 m-0 p-3 pointer-events-none font-mono text-[12.5px] leading-5 whitespace-pre overflow-hidden text-slate-200 border-0 bg-transparent select-none"
+            style={{
+              tabSize: 2,
+              fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+            }}
+            dangerouslySetInnerHTML={{ __html: highlightedCode + '\n' }}
+          />
+
+          {/* Interactive Textarea Overlay */}
+          <textarea
+            ref={textareaRef}
+            value={value}
+            onChange={(e) => onChange(e.target.value)}
+            onScroll={handleScroll}
+            onKeyDown={handleKeyDown}
+            readOnly={readOnly}
+            spellCheck="false"
+            autoCapitalize="none"
+            autoComplete="off"
+            autoCorrect="off"
+            aria-label={`${label || language} code editor`}
+            className="absolute inset-0 z-10 m-0 p-3 font-mono text-[12.5px] leading-5 whitespace-pre border-0 bg-transparent text-transparent caret-sky-400 selection:bg-brand-500/35 selection:text-transparent resize-none focus:outline-none overflow-auto"
+            style={{
+              tabSize: 2,
+              fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+            }}
+          />
+        </div>
       </div>
 
       {/* Status Bar */}
