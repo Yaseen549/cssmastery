@@ -1,0 +1,39 @@
+{
+  "name": "css-mastery-learning-platform",
+  "version": "1.0.0",
+  "description": "Complete CSS Learning Platform — Interactive, Standards-Aligned Educational Architecture from Beginner to Advanced",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "css",
+    "css3",
+    "education",
+    "documentation",
+    "reference",
+    "interactive-lab",
+    "w3c",
+    "whatwg",
+    "nextjs",
+    "tailwind"
+  ],
+  "author": "Yaseen",
+  "license": "MIT",
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.453.0",
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "shiki": "^1.29.2",
+    "tailwind-merge": "^2.6.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.6.2",
+    "postcss": "^8.5.32",
+    "tailwindcss": "^3.4.19"
+  }
+}

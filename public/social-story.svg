@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920" fill="none">
+  <defs>
+    <linearGradient id="stBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="40%" stop-color="#0b1120" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <radialGradient id="stGlow" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="stBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1920" fill="url(#stBg)" />
+  <rect width="1080" height="1920" fill="url(#stGlow)" />
+
+  <!-- Top Logo Bar -->
+  <g transform="translate(100, 240)">
+    
+    <g transform="translate(0, 0) scale(1.2)">
+      <path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z" />
+      <path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z" />
+      <path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z" />
+      <path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z" />
+      <path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z" />
+      <path fill="#EBEBEB" d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z" />
+    </g>
+  
+    <text x="175" y="90" font-family="system-ui, sans-serif" font-size="52" font-weight="900" fill="#ffffff" letter-spacing="-0.03em">
+      CSS<tspan fill="url(#stBlue)">Master</tspan>
+    </text>
+  </g>
+
+  <!-- Main Headline -->
+  <g transform="translate(100, 480)">
+    <rect x="0" y="-35" width="240" height="34" rx="17" fill="#1e3a8a" fill-opacity="0.6" stroke="#3b82f6" stroke-width="1" />
+    <text x="20" y="-13" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#93c5fd" letter-spacing="0.05em">
+      FREE INTERACTIVE GUIDE
+    </text>
+
+    <text y="55" font-family="system-ui, -apple-system, sans-serif" font-size="64" font-weight="900" fill="#ffffff" letter-spacing="-0.03em">
+      Learn CSS the
+    </text>
+    <text y="130" font-family="system-ui, -apple-system, sans-serif" font-size="64" font-weight="900" fill="url(#stBlue)" letter-spacing="-0.03em">
+      Easy, Visual Way
+    </text>
+    <text y="195" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="500" fill="#94a3b8">
+      Zero boring theory. Real interactive previews.
+    </text>
+  </g>
+
+  <!-- Code Snippet Card Window -->
+  <g transform="translate(100, 750)">
+    <rect width="880" height="380" rx="24" fill="#0f172a" stroke="#1e293b" stroke-width="2" />
+    <!-- Window dots -->
+    <circle cx="45" cy="40" r="8" fill="#ef4444" />
+    <circle cx="70" cy="40" r="8" fill="#f59e0b" />
+    <circle cx="95" cy="40" r="8" fill="#10b981" />
+    <text x="130" y="46" font-family="ui-monospace, monospace" font-size="16" fill="#64748b">styles.css</text>
+
+    <!-- Code text -->
+    <text x="45" y="115" font-family="ui-monospace, monospace" font-size="22" fill="#60a5fa">.card {</text>
+    <text x="80" y="155" font-family="ui-monospace, monospace" font-size="22" fill="#94a3b8">display: <tspan fill="#38bdf8">flex</tspan>;</text>
+    <text x="80" y="195" font-family="ui-monospace, monospace" font-size="22" fill="#94a3b8">gap: <tspan fill="#f59e0b">1.5rem</tspan>;</text>
+    <text x="80" y="235" font-family="ui-monospace, monospace" font-size="22" fill="#94a3b8">border-radius: <tspan fill="#f59e0b">16px</tspan>;</text>
+    <text x="80" y="275" font-family="ui-monospace, monospace" font-size="22" fill="#94a3b8">box-shadow: <tspan fill="#a78bfa">0 20px 25px -5px rgb(0 0 0 / 0.1)</tspan>;</text>
+    <text x="45" y="315" font-family="ui-monospace, monospace" font-size="22" fill="#60a5fa">}</text>
+  </g>
+
+  <!-- Feature Cards Vertical List -->
+  <g transform="translate(100, 1190)">
+    <rect x="0" y="0" width="880" height="95" rx="20" fill="#1e293b" fill-opacity="0.7" stroke="#334155" />
+    <text x="40" y="58" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#ffffff">📘 50 Step-by-Step Lessons</text>
+
+    <rect x="0" y="120" width="880" height="95" rx="20" fill="#1e293b" fill-opacity="0.7" stroke="#334155" />
+    <text x="40" y="178" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#ffffff">⚡ In-Browser HTML &amp; CSS Playground</text>
+
+    <rect x="0" y="240" width="880" height="95" rx="20" fill="#1e293b" fill-opacity="0.7" stroke="#334155" />
+    <text x="40" y="298" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#ffffff">🎨 Visual Sliders &amp; Property Lab</text>
+  </g>
+
+  <!-- Bottom CTA & Attribution -->
+  <g transform="translate(540, 1680)">
+    <rect x="-300" y="-35" width="600" height="70" rx="35" fill="#3b82f6" />
+    <text y="9" font-family="system-ui, sans-serif" font-size="24" font-weight="800" fill="#ffffff" text-anchor="middle">
+      Start Learning at cssmaster.dev →
+    </text>
+
+    <text y="100" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#f97316" text-anchor="middle">
+      Made with 🧡 by Yaseen
+    </text>
+  </g>
+</svg>

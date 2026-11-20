@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="60%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <radialGradient id="glowBlue" cx="20%" cy="25%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowCyan" cx="85%" cy="75%" r="55%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85" />
+    </linearGradient>
+    <linearGradient id="blueText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="28" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <!-- Luminous Ambient Glows -->
+  <rect width="1200" height="630" fill="url(#glowBlue)" />
+  <rect width="1200" height="630" fill="url(#glowCyan)" />
+
+  <!-- Grid overlay lines -->
+  <g stroke="#334155" stroke-opacity="0.15" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105" />
+    <line x1="0" y1="210" x2="1200" y2="210" />
+    <line x1="0" y1="315" x2="1200" y2="315" />
+    <line x1="0" y1="420" x2="1200" y2="420" />
+    <line x1="0" y1="525" x2="1200" y2="525" />
+    <line x1="150" y1="0" x2="150" y2="630" />
+    <line x1="300" y1="0" x2="300" y2="630" />
+    <line x1="450" y1="0" x2="450" y2="630" />
+    <line x1="600" y1="0" x2="600" y2="630" />
+    <line x1="750" y1="0" x2="750" y2="630" />
+    <line x1="900" y1="0" x2="900" y2="630" />
+    <line x1="1050" y1="0" x2="1050" y2="630" />
+  </g>
+
+  <!-- Center Card Container -->
+  <rect x="70" y="55" width="1060" height="520" rx="24" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" filter="url(#shadow)" />
+
+  <!-- Window Toolbar Dots -->
+  <circle cx="115" cy="98" r="6.5" fill="#ef4444" />
+  <circle cx="137" cy="98" r="6.5" fill="#f59e0b" />
+  <circle cx="159" cy="98" r="6.5" fill="#10b981" />
+
+  <text x="185" y="103" font-family="ui-monospace, monospace" font-size="13" font-weight="600" fill="#64748b">
+    cssmaster.dev · Complete CSS Learning Platform
+  </text>
+
+  <!-- CSS3 Shield Logo -->
+  
+    <g transform="translate(115, 150) scale(1.35)">
+      <path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z" />
+      <path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z" />
+      <path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z" />
+      <path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z" />
+      <path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z" />
+      <path fill="#EBEBEB" d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z" />
+    </g>
+  
+
+  <!-- Brand Title & Tagline -->
+  <g transform="translate(320, 195)">
+    <!-- Pill Badge -->
+    <rect x="0" y="-30" width="220" height="28" rx="14" fill="#1e3a8a" fill-opacity="0.6" stroke="#3b82f6" stroke-width="1" />
+    <text x="16" y="-12" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#93c5fd" letter-spacing="0.05em">
+      MODERN CSS GUIDE · 2026
+    </text>
+
+    <!-- Main Title -->
+    <text y="42" font-family="system-ui, -apple-system, sans-serif" font-size="58" font-weight="900" fill="#ffffff" letter-spacing="-0.03em">
+      CSS<tspan fill="url(#blueText)">Master</tspan>
+    </text>
+
+    <!-- Tagline -->
+    <text y="88" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="600" fill="#cbd5e1">
+      Learn CSS the Easy, Visual Way
+    </text>
+
+    <!-- Subtitle -->
+    <text y="122" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="400" fill="#94a3b8">
+      Clear step-by-step lessons, live code playground, and interactive visual tools.
+    </text>
+  </g>
+
+  <!-- Feature Pills Row -->
+  <g transform="translate(115, 395)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="215" height="52" rx="12" fill="#0f172a" stroke="#334155" />
+    <text x="20" y="32" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#60a5fa">📘 50 Core Lessons</text>
+
+    <!-- Pill 2 -->
+    <rect x="235" y="0" width="235" height="52" rx="12" fill="#0f172a" stroke="#334155" />
+    <text x="255" y="32" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#38bdf8">⚡ Live Playground</text>
+
+    <!-- Pill 3 -->
+    <rect x="490" y="0" width="230" height="52" rx="12" fill="#0f172a" stroke="#334155" />
+    <text x="510" y="32" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#818cf8">🎨 Visual Toolkits</text>
+
+    <!-- Pill 4 -->
+    <rect x="740" y="0" width="230" height="52" rx="12" fill="#0f172a" stroke="#334155" />
+    <text x="760" y="32" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#34d399">✓ Zero Jargon · 100% Free</text>
+  </g>
+
+  <!-- Bottom Bar: Topics & Attribution -->
+  <g transform="translate(115, 515)">
+    <text font-family="system-ui, sans-serif" font-size="15" font-weight="500" fill="#64748b">
+      Selectors · Box Model · Flexbox · CSS Grid · Responsive Design · Animations · Colors
+    </text>
+    <text x="970" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#f97316" text-anchor="end">
+      Made with 🧡 by Yaseen
+    </text>
+  </g>
+</svg>

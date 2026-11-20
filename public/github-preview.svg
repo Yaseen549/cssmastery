@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640" fill="none">
+  <defs>
+    <linearGradient id="ghBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="60%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <radialGradient id="ghGlow" cx="25%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="ghBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#ghBg)" />
+  <rect width="1280" height="640" fill="url(#ghGlow)" />
+
+  <!-- Frame -->
+  <rect x="60" y="50" width="1160" height="540" rx="24" fill="#0f172a" fill-opacity="0.8" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Logo -->
+  
+    <g transform="translate(110, 140) scale(1.45)">
+      <path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z" />
+      <path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z" />
+      <path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z" />
+      <path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z" />
+      <path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z" />
+      <path fill="#EBEBEB" d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z" />
+    </g>
+  
+
+  <!-- Text -->
+  <g transform="translate(325, 185)">
+    <text font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="900" fill="#ffffff" letter-spacing="-0.03em">
+      CSS<tspan fill="url(#ghBlue)">Master</tspan> Learning Platform
+    </text>
+    <text y="48" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#93c5fd">
+      The Complete Modern CSS Educational Platform
+    </text>
+    <text y="88" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="400" fill="#94a3b8">
+      Next.js 16 (App Router) · Tailwind CSS v4 · Shiki Pre-Highlighting · Client-Side Playground
+    </text>
+  </g>
+
+  <!-- Tags -->
+  <g transform="translate(110, 385)">
+    <rect x="0" y="0" width="240" height="54" rx="14" fill="#1e293b" stroke="#3b82f6" stroke-opacity="0.4" />
+    <text x="24" y="34" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#60a5fa">📘 50 CSS Lessons</text>
+
+    <rect x="260" y="0" width="250" height="54" rx="14" fill="#1e293b" stroke="#3b82f6" stroke-opacity="0.4" />
+    <text x="284" y="34" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#38bdf8">⚡ Secure Playground</text>
+
+    <rect x="530" y="0" width="250" height="54" rx="14" fill="#1e293b" stroke="#3b82f6" stroke-opacity="0.4" />
+    <text x="554" y="34" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#818cf8">🎨 Visual Toolkits</text>
+
+    <rect x="800" y="0" width="260" height="54" rx="14" fill="#1e293b" stroke="#3b82f6" stroke-opacity="0.4" />
+    <text x="824" y="34" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#34d399">🚀 100% Client-Side</text>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(110, 520)">
+    <text font-family="system-ui, sans-serif" font-size="15" font-weight="500" fill="#64748b">
+      MIT Licensed · Open Source Educational Project
+    </text>
+    <text x="1060" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#f97316" text-anchor="end">
+      Made with 🧡 by Yaseen
+    </text>
+  </g>
+</svg>

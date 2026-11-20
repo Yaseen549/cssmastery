@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080" fill="none">
+  <defs>
+    <linearGradient id="sqBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <radialGradient id="sqGlow" cx="50%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="sqBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#sqBg)" />
+  <rect width="1080" height="1080" fill="url(#sqGlow)" />
+
+  <!-- Outer Card Frame -->
+  <rect x="60" y="60" width="960" height="960" rx="36" fill="#0f172a" fill-opacity="0.75" stroke="#334155" stroke-width="2" />
+
+  <!-- Centered CSS Shield -->
+  
+    <g transform="translate(436, 150) scale(1.6)">
+      <path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z" />
+      <path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z" />
+      <path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z" />
+      <path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z" />
+      <path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z" />
+      <path fill="#EBEBEB" d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z" />
+    </g>
+  
+
+  <!-- Title & Headline -->
+  <text x="540" y="420" font-family="system-ui, -apple-system, sans-serif" font-size="64" font-weight="900" fill="#ffffff" letter-spacing="-0.03em" text-anchor="middle">
+    CSS<tspan fill="url(#sqBlue)">Master</tspan>
+  </text>
+
+  <text x="540" y="475" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#cbd5e1" text-anchor="middle">
+    Learn CSS the Easy, Visual Way
+  </text>
+
+  <text x="540" y="520" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="500" fill="#94a3b8" text-anchor="middle">
+    Clear step-by-step lessons, live code playground, and visual tools.
+  </text>
+
+  <!-- 4 Feature Badges Grid -->
+  <g transform="translate(180, 570)">
+    <!-- Row 1 -->
+    <rect x="0" y="0" width="345" height="70" rx="16" fill="#1e293b" stroke="#3b82f6" stroke-opacity="0.3" />
+    <text x="35" y="43" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#60a5fa">📘 50 Core Lessons</text>
+
+    <rect x="375" y="0" width="345" height="70" rx="16" fill="#1e293b" stroke="#3b82f6" stroke-opacity="0.3" />
+    <text x="410" y="43" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#38bdf8">⚡ Live Playground</text>
+
+    <!-- Row 2 -->
+    <rect x="0" y="90" width="345" height="70" rx="16" fill="#1e293b" stroke="#3b82f6" stroke-opacity="0.3" />
+    <text x="35" y="133" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#818cf8">🎨 Visual Toolkits</text>
+
+    <rect x="375" y="90" width="345" height="70" rx="16" fill="#1e293b" stroke="#3b82f6" stroke-opacity="0.3" />
+    <text x="410" y="133" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#34d399">🚀 Zero Setup Free</text>
+  </g>
+
+  <!-- Tag List -->
+  <g transform="translate(540, 800)">
+    <text font-family="ui-monospace, monospace" font-size="17" font-weight="600" fill="#64748b" text-anchor="middle">
+      Flexbox · CSS Grid · Box Model · Gradients · Animations
+    </text>
+  </g>
+
+  <!-- Bottom Attribution -->
+  <g transform="translate(540, 930)">
+    <text font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#f97316" text-anchor="middle">
+      Made with 🧡 by Yaseen
+    </text>
+    <text y="28" font-family="ui-monospace, monospace" font-size="13" font-weight="500" fill="#64748b" text-anchor="middle">
+      cssmaster.dev
+    </text>
+  </g>
+</svg>

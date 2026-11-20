@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" fill="none">
+  <defs>
+    <linearGradient id="twBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="50%" stop-color="#0b1120" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <radialGradient id="twGlow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.30" />
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="twBlueText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#twBg)" />
+  <rect width="1200" height="630" fill="url(#twGlow)" />
+
+  <!-- Outer Rounded Container -->
+  <rect x="50" y="45" width="1100" height="540" rx="28" fill="#0b1120" fill-opacity="0.85" stroke="#1e293b" stroke-width="2" />
+
+  <!-- Header line -->
+  <g transform="translate(95, 95)">
+    
+    <g transform="translate(0, 0) scale(0.65)">
+      <path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z" />
+      <path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z" />
+      <path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z" />
+      <path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z" />
+      <path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z" />
+      <path fill="#EBEBEB" d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z" />
+    </g>
+  
+    <text x="100" y="52" font-family="system-ui, sans-serif" font-size="34" font-weight="900" fill="#ffffff" letter-spacing="-0.02em">
+      CSS<tspan fill="url(#twBlueText)">Master</tspan>
+    </text>
+    <rect x="300" y="26" width="115" height="26" rx="13" fill="#1e293b" />
+    <text x="357" y="43" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#94a3b8" text-anchor="middle">
+      CSS3 GUIDE
+    </text>
+  </g>
+
+  <!-- Main Headline -->
+  <g transform="translate(95, 230)">
+    <text font-family="system-ui, -apple-system, sans-serif" font-size="54" font-weight="900" fill="#ffffff" letter-spacing="-0.03em">
+      Learn CSS the Easy, Visual Way
+    </text>
+    <text y="48" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="500" fill="#94a3b8">
+      Master Cascading Style Sheets with 50 structured lessons and live sandbox previews.
+    </text>
+  </g>
+
+  <!-- Features Row -->
+  <g transform="translate(95, 345)">
+    <rect x="0" y="0" width="220" height="60" rx="14" fill="#0f172a" stroke="#2563eb" stroke-opacity="0.4" />
+    <text x="24" y="36" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#60a5fa">📘 50 Lessons</text>
+
+    <rect x="245" y="0" width="245" height="60" rx="14" fill="#0f172a" stroke="#2563eb" stroke-opacity="0.4" />
+    <text x="269" y="36" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#38bdf8">⚡ Live Playground</text>
+
+    <rect x="515" y="0" width="245" height="60" rx="14" fill="#0f172a" stroke="#2563eb" stroke-opacity="0.4" />
+    <text x="539" y="36" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#818cf8">🎨 Visual Tools</text>
+
+    <rect x="785" y="0" width="225" height="60" rx="14" fill="#0f172a" stroke="#2563eb" stroke-opacity="0.4" />
+    <text x="809" y="36" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#34d399">🚀 100% Free</text>
+  </g>
+
+  <!-- Footer Info -->
+  <g transform="translate(95, 485)">
+    <text font-family="ui-monospace, monospace" font-size="15" font-weight="600" fill="#64748b">
+      https://cssmaster.dev · Built for beginners &amp; developers
+    </text>
+    <text x="1010" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#f97316" text-anchor="end">
+      Made with 🧡 by Yaseen
+    </text>
+  </g>
+</svg>
