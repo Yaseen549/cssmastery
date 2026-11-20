@@ -1,8 +1,17 @@
 # CSSMaster — Complete CSS Learning Platform
 
-> A comprehensive, interactive, beautifully designed CSS learning ecosystem covering Cascading Style Sheets from absolute beginner fundamentals to modern bleeding-edge specifications.
+[![Live Demo](https://img.shields.io/badge/Live_Demo-completecssmastery.vercel.app-blue?style=for-the-badge&logo=vercel)](https://completecssmastery.vercel.app)
+[![Next.js 16](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-Built to match and exceed the architectural and educational quality of sibling platforms (`HTML` and `Website-CProgramming` / [cprogrambasics.vercel.app](https://cprogrambasics.vercel.app/)).
+> A comprehensive, interactive, beautifully designed CSS learning ecosystem covering Cascading Style Sheets from absolute beginner fundamentals to modern layout specifications.
+
+**🌐 Live Website:** [https://completecssmastery.vercel.app](https://completecssmastery.vercel.app)
+
+---
+
+![CSSMaster Preview](public/og-image.png)
 
 ---
 
