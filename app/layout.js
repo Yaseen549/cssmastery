@@ -44,7 +44,10 @@ export const metadata = {
     images: ['/twitter-image.png'],
   },
   icons: {
-    icon: '/favicon.svg',
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', sizes: '32x32' },
+    ],
     shortcut: '/favicon.svg',
     apple: '/icon.svg',
   },
